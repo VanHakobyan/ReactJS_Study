@@ -1,11 +1,14 @@
-import React from 'react';
-
-var helloWorld=React.createClass({
+var HelloWorld = React.createClass({
     render: function () {
-        return <h1>Hello React</h1>;
+        return <h1>Hello React {this.props.name}</h1>;
     }
 });
 ReactDOM.render(
-<helloWorld/>,
+   <div>
+       <HelloWorld name="Van"/>
+       <HelloWorld name="Aram"/>
+       <HelloWorld name="Gayane"/>
+       <HelloWorld name="Tsovinar"/>
+   </div>,
     document.getElementById("app")
 )
