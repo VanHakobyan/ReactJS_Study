@@ -30,16 +30,38 @@ var contact = [
         image: ''
     }
 ];
-var ContentList=React.createClass({
-    render:function () {
-        return(
-            <div>
 
+var Contact = React.createClass({
+    render: function () {
+        return(
+        <li>
+            <img src={this.props.image} width='60px' height='60px'/>
+            <div>{this.props.name}</div>
+
+        </li>);
+    }
+});
+var ContactList = React.createClass({
+    render: function () {
+        return (
+            <div>
+                <ul>
+                    {
+                        contact.map(function (el) {
+                            return <Contact key={el.id}
+                                            name={el.name}
+                                            phoneNuber={el.phoneNumber}
+                                            image={el.image}
+                            />;
+                        })
+                    }
+                </ul>
             </div>
         );
     }
 });
+
 ReactDOM.render(
-  <ContentList/>,
-  document.getElementById('content')
+    <ContactList/>,
+    document.getElementById('content')
 );
