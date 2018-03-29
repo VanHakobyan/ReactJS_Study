@@ -1,6 +1,6 @@
 const path = require('path');
 module.exports = {
-    entry : './PhoneBook/index.js',
+    entry : './Timer/Logic.js',
     output : {
         filename: 'bundle.js',
         path: path.resolve(__dirname,'dist')
