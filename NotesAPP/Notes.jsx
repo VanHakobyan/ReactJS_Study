@@ -10,6 +10,7 @@ var Note = React.createClass({
     }
 });
 
+
 var NoteEditor = React.createClass({
     getInitialState: function() {
         return {
