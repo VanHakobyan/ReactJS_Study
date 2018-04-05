@@ -10,9 +10,12 @@
   "author": "VanikHakobyan",
   "license": "ISC",
   "dependencies": {
+    "classnames": "^2.2.3",
+    "jquery": "*",
+    "less": "^2.6.0",
     "react": "^0.14.6",
     "react-dom": "^0.14.6",
-    "jquery": "*"
+    "react-router": "^2.0.0-rc6"
   },
   "devDependencies": {
     "autoprefixer-loader": "*",
@@ -21,6 +24,7 @@
     "css-loader": "^0.22.0",
     "file-loader": "^0.8.5",
     "json-loader": "^0.5.4",
+    "less-loader": "^2.2.2",
     "react-hot-loader": "^1.3.0",
     "style-loader": "^0.13.0",
     "url-loader": "^0.5.6",
