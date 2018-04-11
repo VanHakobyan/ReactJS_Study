@@ -1,6 +1,6 @@
 var webpack=require('webpack');
 module.exports={
-    entry:"./src/main.js",
+    entry:"./src/main.jsx",
     output: {
         path: __dirname+"/public/build/",
         publicPath: "build/",
