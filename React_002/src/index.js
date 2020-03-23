@@ -2,10 +2,10 @@ import  React from 'react';
 import ReactDOM from 'react-dom';
 
 const TodoList = () =>{
+    const items= ['Learn react','Do task:1020535']
     return(
         <ul>
-            <li>Learn react</li>
-            <li>Do task:1020535</li>
+            {items.map(x=>(<li>{x}</li>))}
         </ul>
     );
 };
